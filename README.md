@@ -1,2 +1,2 @@
 # OSIRIS
-OSIRIS model
+ Code of OSIRIS model
