@@ -70,6 +70,11 @@ To train the model on a specific dataset, run:
 python main_{dataset}.py --fold {test fold} --seed {random seed} --model {algorithm}
 ```
 
+where, if you wish to reproduce the paper results, the model arguments can take the following values:
+- fold: from 0 to 9 (10 folds).
+- seed: from 0 to 9 (10 seeds).
+- model: 'MVFA', 'MVPLS', 'MKL', 'CPM', 'CSMVIB', 'TMC', 'DeepIMV', 'OSIRIS'.
+
 This will:
 
 - Train the indicated model using the specified parameters and dataset.
