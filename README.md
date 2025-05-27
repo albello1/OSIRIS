@@ -115,7 +115,7 @@ The following publicly available multimodal datasets were used:
 After training, the following outputs will be available:
 
 - **Test metric**: Balanced accuracy printed to console.
-- **Saved predictions**: Stored in the `./Results/{dataset}/{model}\_{seed}\_{fold}.npy` directory.
+- **Saved predictions**: Stored in the `./Results/{dataset}/{model}_{seed}_{fold}.npy` directory.
 
 ---
 
