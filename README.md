@@ -81,6 +81,8 @@ This will:
 - Internally create train/validation/test splits used in the original experiments.
 - Save soft predictions and true labels of the test set to the '{dataset}/' directory. The name of the saved files will be: {model}\_{seed}\_{fold}.npy
 
+To store the results for each dataset, create a dedicated directory following the structure: ./Results/{dataset}/
+
 Refer to the script headers for argument documentation.
 
 Once all models have been executed, any evaluation metric can be computed using the soft predictions and the corresponding true labels. In the case of OSIRIS, the Evidence Lower Bound (ELBO) associated with each initialization has also been stored, enabling the selection of the model instance that achieves the highest ELBO. Thus, the final results will be: [soft predictions, true labels, ELBO].
