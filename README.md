@@ -114,8 +114,8 @@ The following publicly available multimodal datasets were used:
 
 After training, the following outputs will be available:
 
-- **Test metrics**: AUC and balanced accuracy printed to console.
-- **Saved models**: Stored in the `models/` directory.
+- **Test metric**: Balanced accuracy printed to console.
+- **Saved predictions**: Stored in the `./Results/{dataset}/{model}\_{seed}\_{fold}.npy` directory.
 
 ---
 
