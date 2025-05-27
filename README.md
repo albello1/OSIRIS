@@ -79,7 +79,7 @@ This will:
 
 - Train the indicated model using the specified parameters and dataset.
 - Internally create train/validation/test splits used in the original experiments.
-- Save soft predictions and true labels of the test set to the '{dataset}/' directory. The name of the saved files will be: {model}\_{seed}\_{fold}.npy
+- Save soft predictions and true labels of the test set to the './Results/{dataset}/' directory. The name of the saved files will be: {model}\_{seed}\_{fold}.npy
 
 To store the results for each dataset, create a dedicated directory following the structure: ./Results/{dataset}/
 
@@ -131,6 +131,14 @@ where, if you wish to reproduce the paper results, the model arguments can take 
 - perc: 5,10,15,20,25, and 30.
 - imputer: 'median', 'mean', 'MICE', 'KNN', 'VAE', 'RF', and 'None'. None corresponds to using OSIRIS's internal imputation mechanism.
 
+This will:
+
+- Train OSIRIS model with a specified percentage of missing values and a specific imputation algorithm.
+- Save soft predictions and true labels of the test set to the '/Results_imputation/{dataset}/' directory. The name of the saved files will be: {seed}\_{fold}\_{perc}\_{imputer}.npy
+
+To store the results for each dataset, create a dedicated directory following the structure: ./Results_imputation/{dataset}/
+
+The stored results follow the format: [Predicted labels, True labels, ELBO]. From these vectors, one can compute balanced accuracy as well as any other relevant evaluation metrics.
 
 ---
 
