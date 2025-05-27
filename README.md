@@ -67,7 +67,7 @@ The model combines sparse discriminative and generative components into a unifie
 To train the model on a specific dataset, run:
 
 ```bash
-python main_{dataset}.py --fold {test fold} --seed {random seed} --model {algorithm}
+python main_{dataset}.py --fold {test fold} --seed {random seed} --model {model to run}
 ```
 
 where, if you wish to reproduce the paper results, the model arguments can take the following values:
@@ -79,7 +79,7 @@ This will:
 
 - Train the indicated model using the specified parameters and dataset.
 - Internally create train/validation/test splits used in the original experiments.
-- Save soft predictions and true labels of the test set to the '{dataset}/' directory.
+- Save soft predictions and true labels of the test set to the '{dataset}/' directory. The name of the saved files will be: {model}_{seed}_{fold}.npy
 
 Refer to the script headers for argument documentation.
 
