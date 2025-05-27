@@ -121,6 +121,17 @@ After training, the following outputs will be available:
 
 ## Missing data imputation experiment
 
+To reproduce the missing data imputation experiment, we follow a procedure analogous to the performance experiments. Specifically, to train the model with a given missing data rate and a specified imputation algorithm, we execute the following command:
+```bash
+python main_{dataset}.py --fold {test fold} --seed {random seed} --perc {percentage of missing values} --imputer {imputation algorithm}
+```
+where, if you wish to reproduce the paper results, the model arguments can take the following values:
+- fold: from 0 to 9 (10 folds).
+- seed: from 0 to 9 (10 seeds).
+- perc: 5,10,15,20,25, and 30.
+- imputer: 'median', 'mean', 'MICE', 'KNN', 'VAE', 'RF', and 'None'. None corresponds to using OSIRIS's internal imputation mechanism.
+
+
 ---
 
 ## Citation
