@@ -83,6 +83,8 @@ This will:
 
 Refer to the script headers for argument documentation.
 
+Once all models have been executed, any evaluation metric can be computed using the soft predictions and the corresponding true labels. In the case of OSIRIS, the Evidence Lower Bound (ELBO) associated with each initialization has also been stored, enabling the selection of the model instance that achieves the highest ELBO. Thus, the final results will be: [soft predictions, true labels, ELBO].
+
 ---
 
 ## Datasets
