@@ -67,15 +67,14 @@ The model combines sparse discriminative and generative components into a unifie
 To train the model on a specific dataset, run:
 
 ```bash
-python main_{dataset}.py --arg1 value1 --arg2 value2 ...
+python main_{dataset}.py --fold {test fold} --seed {random seed} --model {algorithm}
 ```
 
 This will:
 
 - Train the indicated model using the specified parameters and dataset.
 - Internally create train/validation/test splits used in the original experiments.
-- Save trained models to the `models/` directory.
-- Output evaluation metrics (AUC and Balanced Accuracy) on the test set.
+- Save soft predictions and true labels of the test set to the '{dataset}/' directory.
 
 Refer to the script headers for argument documentation.
 
