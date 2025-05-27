@@ -73,7 +73,7 @@ python main_{dataset}.py --fold {test fold} --seed {random seed} --model {model 
 where, if you wish to reproduce the paper results, the model arguments can take the following values:
 - fold: from 0 to 9 (10 folds).
 - seed: from 0 to 9 (10 seeds).
-- model: 'MVFA', 'MVPLS', 'MKL', 'CPM', 'CSMVIB', 'TMC', 'DeepIMV', 'OSIRIS'.
+- model: 'MVFA', 'MVPLS', 'MKL', 'CPM', 'CSMVIB', 'TMC', 'DeepIMV', 'OSIRIS'. These models include baselines and OSIRIS.
 
 This will:
 
