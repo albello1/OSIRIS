@@ -79,9 +79,9 @@ This will:
 
 - Train the indicated model using the specified parameters and dataset.
 - Internally create train/validation/test splits used in the original experiments.
-- Save soft predictions and true labels of the test set to the './Results/{dataset}/' directory. The name of the saved files will be: '{model}\_{seed}\_{fold}.npy'
+- Save soft predictions and true labels of the test set to the `./Results/{dataset}/` directory. The name of the saved files will be: `{model}\_{seed}\_{fold}.npy`
 
-To store the results for each dataset, create a dedicated directory following the structure: './Results/{dataset}/'
+To store the results for each dataset, create a dedicated directory following the structure: `./Results/{dataset}/`
 
 Refer to the script headers for argument documentation.
 
@@ -110,7 +110,7 @@ The following publicly available multimodal datasets were used:
 
 Upon downloading each dataset, make sure to convert every view into a NumPy array before passing it to the model. Once the data has been downloaded and converted to NumPy format, save each view in the folder named after the specific dataset inside the Data/ directory: Data/{dataset}. Please make sure to check the code to see how each view has been named, so that your filenames match the expected format.
 
-The specific train and test splits for the 10-fold cross-validation performed on each dataset are stored in the folder Data/{dataset}/10fold_{dataset}. The model automatically accesses these files to apply the correct partitioning during training and evaluation.
+The specific train and test splits for the 10-fold cross-validation performed on each dataset are stored in the folder `Data/{dataset}/10fold_{dataset}`. The model automatically accesses these files to apply the correct partitioning during training and evaluation.
 
 ---
 
@@ -138,9 +138,9 @@ where, if you wish to reproduce the paper results, the model arguments can take 
 This will:
 
 - Train OSIRIS model with a specified percentage of missing values and a specific imputation algorithm.
-- Save soft predictions and true labels of the test set to the '/Results_imputation/{dataset}/' directory. The name of the saved files will be: {seed}\_{fold}\_{perc}\_{imputer}.npy
+- Save soft predictions and true labels of the test set to the `/Results_imputation/{dataset}/` directory. The name of the saved files will be: `{seed}\_{fold}\_{perc}\_{imputer}.npy`
 
-To store the results for each dataset, create a dedicated directory following the structure: ./Results_imputation/{dataset}/
+To store the results for each dataset, create a dedicated directory following the structure: `./Results_imputation/{dataset}/`
 
 # Output
 
