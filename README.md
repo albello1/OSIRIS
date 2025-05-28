@@ -79,9 +79,9 @@ This will:
 
 - Train the indicated model using the specified parameters and dataset.
 - Internally create train/validation/test splits used in the original experiments.
-- Save soft predictions and true labels of the test set to the './Results/{dataset}/' directory. The name of the saved files will be: {model}\_{seed}\_{fold}.npy
+- Save soft predictions and true labels of the test set to the './Results/{dataset}/' directory. The name of the saved files will be: '{model}\_{seed}\_{fold}.npy'
 
-To store the results for each dataset, create a dedicated directory following the structure: ./Results/{dataset}/
+To store the results for each dataset, create a dedicated directory following the structure: './Results/{dataset}/'
 
 Refer to the script headers for argument documentation.
 
