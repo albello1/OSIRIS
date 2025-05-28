@@ -142,6 +142,8 @@ This will:
 
 To store the results for each dataset, create a dedicated directory following the structure: ./Results_imputation/{dataset}/
 
+# Output
+
 The stored results follow the format: [Predicted labels, True labels, ELBO]. From these vectors, one can compute balanced accuracy as well as any other relevant evaluation metrics.
 
 The codes required to run this experiment is located in the Imputation_experiment directory.
