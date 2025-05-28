@@ -108,6 +108,8 @@ The following publicly available multimodal datasets were used:
 > Note: Datasets are **not included** due to licensing.  
 > All except ADNI and TADPOLE are publicly accessible.
 
+Upon downloading each dataset, make sure to convert every view into a NumPy array before passing it to the model. This step is required for any experiment with the OSIRIS framework.
+
 ---
 
 ## Output
