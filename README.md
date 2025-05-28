@@ -108,7 +108,9 @@ The following publicly available multimodal datasets were used:
 > Note: Datasets are **not included** due to licensing.  
 > All except ADNI and TADPOLE are publicly accessible.
 
-Upon downloading each dataset, make sure to convert every view into a NumPy array before passing it to the model. This step is required for any experiment with the OSIRIS framework.
+Upon downloading each dataset, make sure to convert every view into a NumPy array before passing it to the model. Once the data has been downloaded and converted to NumPy format, save each view in the folder named after the specific dataset inside the Data/ directory: Data/{dataset}. Please make sure to check the code to see how each view has been named, so that your filenames match the expected format.
+
+The specific train and test splits for the 10-fold cross-validation performed on each dataset are stored in the folder Data/{dataset}/10fold_{dataset}. The model automatically accesses these files to apply the correct partitioning during training and evaluation.
 
 ---
 
