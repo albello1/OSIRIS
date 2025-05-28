@@ -147,10 +147,11 @@ To store the results for each dataset, create a dedicated directory following th
 Please cite the paper using the placeholder below. This will be updated upon publication:
 
 ```bibtex
-@inproceedings{osiris2025,
+@article{osiris2025,
   title={A Unified Generative and Discriminative Model for Interpreting Multimodal and Incomplete Datasets},
   author={Anonymous},
-  booktitle={Neural Information Processing Systems (NeurIPS)},
+  journal={Advances in Neural Information Processing Systems},
+  volume={38},
   year={2025}
 }
 ```
