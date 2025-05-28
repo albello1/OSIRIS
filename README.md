@@ -144,9 +144,11 @@ To store the results for each dataset, create a dedicated directory following th
 
 # Output
 
-The stored results follow the format: [Predicted labels, True labels, ELBO]. From these vectors, one can compute balanced accuracy as well as any other relevant evaluation metrics.
+After training, the following outputs will be available:
 
-The codes required to run this experiment is located in the Imputation_experiment directory.
+- **Test metric**: Balanced accuracy printed to console.
+- **Saved predictions**: Stored in the `./Results/Imputation/{dataset}/OSIRIS_{seed}_{fold}_{perc}_{imputer}.npy` directory. Each file will follow the format: [Predicted labels, True labels, ELBO]
+
 
 ---
 
