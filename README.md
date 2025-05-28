@@ -73,7 +73,7 @@ python main_{dataset}.py --fold {test fold} --seed {random seed} --model {model 
 where, if you wish to reproduce the paper results, the model arguments can take the following values:
 - fold: from 0 to 9 (10 folds).
 - seed: from 0 to 9 (10 seeds).
-- model: 'MVFA', 'MVPLS', 'MKL', 'CPM', 'CSMVIB', 'TMC', 'DeepIMV', 'OSIRIS'. These models include baselines and OSIRIS. Note that, the baseline models have either been cross-validated or use the default parameters provided by their original authors.
+- model: 'MVFA', 'MVPLS', 'MKL', 'CPM', 'CSMVIB', 'TMC', 'DeepIMV', 'OSIRIS'. The scripts used to run these models are located in the `Models/` folder and are imported from within the `main_{dataset}.py` files. The class that implements OSIRIS is defined in `OSIRIS.py`.
 
 This will:
 
