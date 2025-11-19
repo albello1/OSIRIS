@@ -148,11 +148,10 @@ Please cite the paper using the placeholder below. This will be updated upon pub
 
 ```bibtex
 @article{osiris2025,
-  title={A Unified Generative and Discriminative Model for Interpreting Multimodal and Incomplete Datasets},
-  author={Anonymous},
-  journal={Advances in Neural Information Processing Systems},
-  volume={38},
-  year={2025}
+  title={Interpretable Generative and Discriminative Learning for Multimodal and Incomplete Clinical Data},
+  author={Belenguer-Llorens, Albert and Sevilla-Salcedo, Carlos and Mourao-Miranda, Janaina and G\'{o}mez-Verdejo, Vanessa},
+  journal={Information Fusion},
+  year={2026}
 }
 ```
 
