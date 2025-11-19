@@ -7,7 +7,7 @@
 Official repository for the paper:
 
 **A Unified Generative and Discriminative Model for Interpreting Multimodal and Incomplete Datasets**  
-*Submitted to NeurIPS 2025 (under review)*
+*Submitted to Information Fusion (under review)*
 
 ---
 
