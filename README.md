@@ -6,7 +6,7 @@
 
 Official repository for the paper:
 
-**A Unified Generative and Discriminative Model for Interpreting Multimodal and Incomplete Datasets**  
+**Interpretable Generative and Discriminative Learning for Multimodal and Incomplete Clinical Data**  
 *Submitted to Information Fusion (under review)*
 
 ---
